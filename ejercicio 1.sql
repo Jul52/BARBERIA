@@ -15,7 +15,7 @@ BEGIN
 END //
 DELIMITER ;
 
--- Procedimiento: Agendar cita con validación
+
 DELIMITER //
 CREATE PROCEDURE agendar_cita(
     IN cliente_id INT,
@@ -34,7 +34,7 @@ BEGIN
 END //
 DELIMITER ;
 
--- Trigger: Evitar inserción directa sin validación
+-- Trigger
 DELIMITER //
 CREATE TRIGGER evitar_citas_superpuestas
 BEFORE INSERT ON Cita
